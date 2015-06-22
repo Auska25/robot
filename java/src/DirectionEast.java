@@ -13,6 +13,7 @@ public class DirectionEast implements IDirection
 	
 	public Position move(Position position)
 	{
+		position.setXPosition(position.getXPosition() + 1 );
 		return position;
 	}
 

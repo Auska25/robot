@@ -11,7 +11,7 @@ public class TestPosition {
 	@Before
 	public void setUp() throws Exception
 	{
-		position = new Position(0, 5, 0, 5);
+		position = new Position(0, 4, 0, 4);
 	}
 
 	@Test

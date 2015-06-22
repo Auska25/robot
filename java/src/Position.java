@@ -24,7 +24,7 @@ public class Position
 	
 	public void setXPosition(int x_position)
 	{
-		if(x_position >= MIN_X_POSITION && x_position < MAX_X_POSITION)
+		if(x_position >= MIN_X_POSITION && x_position <= MAX_X_POSITION)
 		{
 			this.x_position = x_position;
 		}
@@ -37,7 +37,7 @@ public class Position
 	
 	public void setYPosition(int y_position)
 	{
-		if(y_position >= MIN_Y_POSITION && y_position < MAX_Y_POSITION)
+		if(y_position >= MIN_Y_POSITION && y_position <= MAX_Y_POSITION)
 		{
 			this.y_position = y_position;
 		}
