@@ -34,15 +34,15 @@ public class Robot
 		}
 	}
 	
-	public void report()
+	public String report()
 	{
 		if( !is_placed )
 		{
-			System.out.println("ROBOT HASN'T BE PLACED SUCCESSFULLY");
+			return "ROBOT HASN'T BE PLACED SUCCESSFULLY";
 		}
 		else
 		{
-			System.out.println(position.getXPosition() + "," + position.getYPosition() + "," + direction.name());
+			return position.getXPosition() + "," + position.getYPosition() + "," + direction.name();
 		}
 	}
 	
