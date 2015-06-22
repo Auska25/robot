@@ -1,26 +1,45 @@
 
 public class Position
 {
-	private int x_position;
-	private int y_position;
+	private final int MIN_X_POSITION;
+	private final int MAX_X_POSITION;
+	private final int MIN_Y_POSITION;
+	private final int MAX_Y_POSITION;
 	
-	public int get_x_position()
+	private int x_position = 0;
+	private int y_position = 0;
+	
+	public Position(int min_x, int max_x, int min_y, int max_y)
+	{
+		MIN_X_POSITION = min_x;
+		MAX_X_POSITION = max_x;
+		MIN_Y_POSITION = min_y;
+		MAX_Y_POSITION = max_y;
+	}
+	
+	public int getXPosition()
 	{
 		return x_position;
 	}
 	
-	public void set_x_position(int x_position)
+	public void setXPosition(int x_position)
 	{
-		this.x_position = x_position;
+		if(x_position >= MIN_X_POSITION && x_position < MAX_X_POSITION)
+		{
+			this.x_position = x_position;
+		}
 	}
 	
-	public int get_y_position()
+	public int getYPosition()
 	{
 		return y_position;
 	}
 	
-	public void set_y_position(int y_position)
+	public void setYPosition(int y_position)
 	{
-		this.y_position = y_position;
+		if(y_position >= MIN_Y_POSITION && y_position < MAX_Y_POSITION)
+		{
+			this.y_position = y_position;
+		}
 	}
 }
