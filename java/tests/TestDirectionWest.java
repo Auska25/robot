@@ -24,4 +24,32 @@ public class TestDirectionWest
 		
 		org.junit.Assert.assertEquals("Direction Should be NORTH", "NORTH", newDirection.name());
 	}
+	
+	@Test
+	public void testDirectionWest_Move_MinNothing()
+	{
+		IDirection direction = new DirectionWest();
+		Position position = new Position(0, 4, 0, 4);
+		position.setXPosition(0);
+		position.setYPosition(0);
+		
+		position = direction.move(position);
+		
+		org.junit.Assert.assertEquals(0, position.getXPosition());
+		org.junit.Assert.assertEquals(0, position.getYPosition());
+	}
+	
+	@Test
+	public void testDirectionWest_Move_MaxLeft()
+	{
+		IDirection direction = new DirectionWest();
+		Position position = new Position(0, 4, 0, 4);
+		position.setXPosition(4);
+		position.setYPosition(0);
+		
+		position = direction.move(position);
+		
+		org.junit.Assert.assertEquals(3, position.getXPosition());
+		org.junit.Assert.assertEquals(0, position.getYPosition());
+	}
 }
