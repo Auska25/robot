@@ -3,12 +3,12 @@ public class DirectionSouth implements IDirection
 {
 	public IDirection left()
 	{
-		return null;
+		return new DirectionEast();
 	}
 	
 	public IDirection right()
 	{
-		return null;
+		return new DirectionWest();
 	}
 	
 	public Position move(Position position)
