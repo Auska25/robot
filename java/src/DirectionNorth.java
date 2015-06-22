@@ -13,6 +13,7 @@ public class DirectionNorth implements IDirection
 	
 	public Position move(Position position)
 	{
+		position.setYPosition(position.getYPosition() + 1 );
 		return position;
 	}
 
