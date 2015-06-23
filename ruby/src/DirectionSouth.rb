@@ -15,4 +15,9 @@ class DirectionSouth < IDirection
   def right()
     return DirectionWest.new()
   end
+  
+  def move(position)
+    position.y_position = position.y_position - 1
+    return position
+  end
 end
