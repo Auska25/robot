@@ -61,6 +61,16 @@ public class Main
 			{
 				System.out.println(robot.report());
 			}
+			else if( in.equals("QUIT"))
+			{
+				break;
+			}
+			else
+			{
+				// Silently ignore invalid input
+			}
 		}
+		scanner.close();
+		System.out.println("SYSTEM EXIT");
 	}
 }
