@@ -8,4 +8,17 @@ class TestDirectionNorth < Test::Unit::TestCase
     assert_equal("NORTH", north.name())
   end
   
+  def test_left
+    direction = DirectionNorth.new()
+    assert_equal("NORTH", direction.name())
+    direction = direction.left()
+    assert_equal("WEST", direction.name())
+  end
+  
+  def test_right
+    direction = DirectionNorth.new()
+    assert_equal("NORTH", direction.name())
+    direction = direction.right()
+    assert_equal("EAST", direction.name())
+  end
 end
