@@ -1,3 +1,5 @@
+require_relative "IDirection.rb"
+
 class DirectionNorth < IDirection
   
   def name()
