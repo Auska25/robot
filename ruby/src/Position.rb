@@ -37,4 +37,10 @@ class Position
     end
     return false
   end
+  
+  def setPosition(x, y)
+    x_ok = self.x_position=(x)
+    y_ok = self.y_position=(y)
+    return x_ok && y_ok
+  end
 end
