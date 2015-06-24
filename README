@@ -1,0 +1,14 @@
+Ruby source is located under ruby
+Java Source is located under java
+
+To run ruby version "ruby ruby/src/Main.rb"
+To run java version "java -jar java/runme.jar"
+
+Both programs will start reading from stdin
+
+Senario files are located under tests
+To run a senario cat the file and pipe to either ruby or java programs
+
+e.g. "cat tests/senario1 | ruby ruby/src/Main.rb"
+
+Output should be the same as <senario-file>.expected for eiter ruby or java
