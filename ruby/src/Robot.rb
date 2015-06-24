@@ -1,4 +1,8 @@
 require_relative "Position.rb"
+require_relative "DirectionEast.rb"
+require_relative "DirectionNorth.rb"
+require_relative "DirectionSouth.rb"
+require_relative "DirectionWest.rb"
 
 class Robot
   @position
