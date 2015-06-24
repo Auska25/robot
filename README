@@ -12,3 +12,8 @@ To run a senario cat the file and pipe to either ruby or java programs
 e.g. "cat tests/senario1 | ruby ruby/src/Main.rb"
 
 Output should be the same as <senario-file>.expected for eiter ruby or java
+
+diffences in output can be checked with diff
+
+cat tests/senario2 | java -jar java/runme.jar | diff tests/senario2.expected -
+

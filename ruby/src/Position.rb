@@ -23,7 +23,6 @@ class Position
       @x_position = x
       return true
     end
-    @x_position = nil
     return false
   end
   
@@ -36,7 +35,6 @@ class Position
       @y_position = y
       return true
     end
-    @y_position = nil
     return false
   end
   
