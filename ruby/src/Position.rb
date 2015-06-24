@@ -5,7 +5,7 @@ class Position
   @MAX_Y_POSITION
   
   @x_position = 0
-  @x_position = 0
+  @y_position = 0
   
   def initialize(min_x, max_x, min_y, max_y)
     @MIN_X_POSITION = min_x
@@ -23,6 +23,7 @@ class Position
       @x_position = x
       return true
     end
+    @x_position = nil
     return false
   end
   
@@ -35,12 +36,13 @@ class Position
       @y_position = y
       return true
     end
+    @y_position = nil
     return false
   end
   
   def setPosition(x, y)
-    x_ok = self.x_position=(x)
-    y_ok = self.y_position=(y)
-    return x_ok && y_ok
+    self.x_position = x
+    self.y_position = y
+    return @x_position && @y_position
   end
 end
